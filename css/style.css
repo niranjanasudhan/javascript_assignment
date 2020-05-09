@@ -48,21 +48,21 @@ h4 {
     margin: 20px;
     padding: 50px;
     background-color: #000;
-    color: rgb(209, 252, 135);
+    color: #e4b7cc;
     display: none;
 }
 
 .btn_show {
     font-size: 20px;
     color: #000;
-    background-color: rgb(209, 252, 135);
+    background-color: #e4b7cc;
     height: 50px;
     width: 150px;
-    border: 3px solid rgb(209, 252, 135);
+    border: 3px solid #e4b7cc;
 }
 
 .btn_show:hover {
-    color: rgb(209, 252, 135);
+    color: #e4b7cc;
     background-color: #000;
 }
 
@@ -72,7 +72,14 @@ h4 {
 
 #result10,
 #result9,
-#result1 {
+#result1,
+#result2,
+#result3,
+#result4,
+#result5,
+#result6,
+#result7,
+#result8 {
     color: #fff;
     font-weight: 600;
     font-size: 20px;
@@ -81,4 +88,21 @@ h4 {
 
 .action_button {
     float: right;
+}
+
+.cross {
+    width: 100%;
+}
+
+label {
+    font-size: 18px;
+}
+
+.main_qdiv {
+    padding: 20px;
+    border: 2px solid pink;
+}
+
+.main_qdiv:hover {
+    background-color: pink;
 }

@@ -22,131 +22,289 @@
     </div>
     <div class="row">
         <div class="question">
-            <h4>1. Write a JavaScript function to get an array and to read the first element of an array. Check whether it is prime or not. </h4>
-            <button type="button" class="btn_result" onclick="show_div(1)">Solution</button>
-            <div class="answer_section show" id="answerhide_1">
-                <div class="row">
-                    <div class="col-md-4"><label>Enter array values ( use comma to seperate each values ) :</label></div>
-                    <div class="col-md-8">
-                        <div class="ext" id="ext">
-                            <input type="text" name="array_val" id="array_val" class="form-control" />
+            <div class="main_qdiv">
+                <h4>1. Write a JavaScript function to get an array and to read the first element of an array. Check whether it is prime or not. </h4>
+                <button type="button" class="btn_result" onclick="show_div(1)">Solution</button>
+                <div class="answer_section show" id="answerhide_1">
+                    <div class="row">
+                        <div class="col-md-4"><label>Enter array values ( use comma to seperate each values ) :</label></div>
+                        <div class="col-md-8">
+                            <div class="ext" id="ext">
+                                <input type="text" name="array_val" id="array_val" class="form-control" />
+                            </div>
                         </div>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <button type="button" class="btn_show" onclick="check_prime()">Check Prime</button>
+                    <div id="result1">
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="main_qdiv">
+                <h4>2. Write a JavaScript program to find the most frequent item of an array.</h4>
+                <button type="button" class="btn_result" onclick="show_div(2)">Solution</button>
+                <div class="answer_section show" id="answerhide_2">
+                    <div class="row">
+                        <div class="col-md-4"><label>Enter array values ( use comma to seperate each values ) :</label></div>
+                        <div class="col-md-8">
+                            <div class="ext" id="ext">
+                                <input type="text" name="array_most_val" id="array_most_val" class="form-control" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <button type="button" class="btn_show" onclick="print_most_frequent()">Find </button>
+                    <div id="result2">
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="main_qdiv">
+                <h4>3. Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'. </h4>
+                <button type="button" class="btn_result" onclick="show_div(3)">Solution</button>
+                <div class="answer_section show" id="answerhide_3">
+                    <div class="row">
+                        <div class="col-md-4"><label>Enter a String</label></div>
+                        <div class="col-md-8">
+                            <div class="ext" id="ext">
+                                <input type="text" name="array_case" id="array_case" class="form-control" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <button type="button" class="btn_show" onclick="print_case()">View Result </button>
+                    <div id="result3">
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="main_qdiv">
+                <h4>4. Write a JavaScript program to find the sum of squares of the elements of an array.
+                </h4>
+                <button type="button" class="btn_result" onclick="show_div(4)">Solution</button>
+                <div class="answer_section show" id="answerhide_4">
+                    <div class="row">
+                        <div class="col-md-4"><label>Enter array values ( use comma to seperate each values ) :</label></div>
+                        <div class="col-md-8">
+                            <div class="ext" id="ext">
+                                <input type="text" name="array_val_square" id="array_val_square" class="form-control" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <button type="button" class="btn_show" onclick="find_square()">Find</button>
+                    <div id="result4">
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="main_qdiv">
+                <h4>5. Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, check if the current number is odd or even, and display the message to the screen as odd or even. </h4>
+                <button type="button" class="btn_result" onclick="show_div(5)">Solution</button>
+                <div class="answer_section show" id="answerhide_5">
+
+                    <div class="row ">
+                        <div class="col-md-2 "><label>Enter From Value:</label></div>
+                        <div class="col-md-2 ">
+                            <div class="ext " id="ext">
+                                <input type="number" name="from" id="from" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 "><label>Enter To Value:</label></div>
+                        <div class="col-md-2 ">
+                            <div class="ext " id="ext ">
+                                <input type="number" name="to" id="to" class="form-control" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <button type="button" class="btn_show" onclick="find_even_odd()">Find</button>
+                    <div id="result5">
+
+
                     </div>
 
                 </div>
+            </div>
+            <hr>
+            <div class="main_qdiv">
+                <h4>6. Write a JavaScript function to truncate a string if it is longer than the specified number of characters.
+                </h4>
+                <button type="button" class="btn_result" onclick="show_div(6)">Solution</button>
+                <div class="answer_section show" id="answerhide_6">
+                    <div class="row ">
+                        <div class="col-md-2 "><label>Enter String:</label></div>
+                        <div class="col-md-5 ">
+                            <div class="ext " id="ext">
+                                <input type="text" name="sub" id="sub" class="form-control" />
+                            </div>
+                        </div>
 
-                <br>
-                <br>
-                <button type="button" class="btn_show" onclick="check_prime()">Check Prime</button>
-                <div id="result1">
 
+
+                    </div>
+                    <div class="row " style="margin-top:10px;">
+
+                        <div class="col-md-2 "><label>Enter limit:</label></div>
+                        <div class="col-md-5 ">
+                            <div class="ext " id="ext">
+                                <input type="number" name="limit" id="limit" class="form-control" />
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <button type="button" class="btn_show" onclick="find_sub()">Find</button>
+                    <div id="result6">
+
+
+                    </div>
                 </div>
             </div>
             <hr>
-            <h4>2. Write a JavaScript program to find the most frequent item of an array.</h4>
-            <button type="button" class="btn_result" onclick="show_div(2)">Solution</button>
-            <div class="answer_section show" id="answerhide_2">
-                <div class="row">
-                    <div class="col-md-4"><label>Enter array values ( use comma to seperate each values ) :</label></div>
-                    <div class="col-md-8">
-                        <div class="ext" id="ext">
-                            <input type="text" name="array_most_val" id="array_most_val" class="form-control" />
+            <div class="main_qdiv">
+                <h4>7. Write a JavaScript program that accept two integers and display the larger using findLarge() function.</h4>
+                <button type="button" class="btn_result" onclick="show_div(7)">Solution</button>
+                <div class="answer_section show" id="answerhide_7">
+                    <div class="row ">
+                        <div class="col-md-2 "><label>Enter First Number:</label></div>
+                        <div class="col-md-5 ">
+                            <div class="ext " id="ext">
+                                <input type="text" name="first" id="first" class="form-control" />
+                            </div>
                         </div>
+
+
+
+                    </div>
+                    <div class="row " style="margin-top:10px;">
+
+                        <div class="col-md-2 "><label>Enter Second Number:</label></div>
+                        <div class="col-md-5 ">
+                            <div class="ext " id="ext">
+                                <input type="number" name="second" id="second" class="form-control" />
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <button type="button" class="btn_show" onclick="findLarge()">Find</button>
+                    <div id="result7">
+
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="main_qdiv">
+                <h4>8. Write a JavaScript program using for…in to read the objects from an array entered by an user and to arrange it in alphabetical order.</h4>
+                <button type="button" class="btn_result" onclick="show_div(8)">Solution</button>
+                <div class="answer_section show" id="answerhide_8">
+                    <div class="row">
+                        <div class="col-md-2"><label>Enter student details to array:</label></div>
+                        <div class="col-md-5">
+                            <form id="myform">
+                                <table id="hidetab">
+                                    <tr>
+                                        <th>Student Name</th>
+                                        <th>Roll No</th>
+                                        <th>Mark (%)</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="countcls"><input type="text" name="sname[]" id="sname"></td>
+                                        <td><input type="number" name="sno[]" id="sno"></td>
+                                        <td><input type="number" name="smark[]" id="smark"></td>
+                                        <td><img class="cross" src="images/cross.png" onclick="remove(this)"> </td>
+                                    </tr>
+
+                                </table>
+                            </form>
+                        </div>
+                        <div class="col-md-5"></div>
+
+                    </div>
+                    <br>
+                    <div class="col-md-8"><button type="button" onclick="add()" style="float:right;" class="btn btn-primary">Add Student</button></div>
+
+                    <br>
+                    <br>
+                    <button type="button" class="btn_show" onclick="sort()">Sort(By Name) </button>
+                    <div id="result8" style="margin-top:20px">
+
                     </div>
 
                 </div>
+            </div>
+            <hr>
+            <div class="main_qdiv">
+                <h4>9. Write a JavaScript program to print the letters of the word “Javascript” as below in each line using for…of.
+                    <br> J
+                    <br> Ja
+                    <br> Jav
+                    <br> .
+                    <br> .
+                    <br> Javascript
+                    <br>
+                </h4>
+                <button type="button" class="btn_result" onclick="show_div(9)">Solution</button>
 
-                <br>
-                <br>
-                <button type="button" class="btn_show" onclick="print_most_frequent()">Find </button>
-                <div id="result2">
+                <div class="answer_section show" id="answerhide_9">
+                    <div class="row">
+                        <div class="col-md-2"><label>Enter String :</label></div>
+                        <div class="col-md-5"> <input type="text" name="pattern_string_count" id="pattern_string_count" class="form-control" /></div>
+                        <button type="button" class="btn_show" onclick="show_pattern_string()">Show Pattern</button>
+                    </div>
+                    <div id="result9">
 
+                    </div>
                 </div>
             </div>
             <hr>
-            <h4>3. Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'. </h4>
-            <button type="button" class="btn_result" onclick="show_div(3)">Solution</button>
-            <div class="answer_section show" id="answerhide_3">
+            <div class="main_qdiv">
+                <h4>10.Write a JavaScript program to construct the following pattern, using a nested for loop.
+                    <br> *
+                    <br> * *<br> * * *<br> * * * *<br> </h4>
+                <button type="button" class="btn_result" onclick="show_div(10)">Solution</button>
+                <div class="answer_section show" id="answerhide_10">
+                    <div class="row">
+                        <div class="col-md-2"><label>Enter Level of the pattern :</label></div>
+                        <div class="col-md-5"> <input type="number" name="pattern_count" id="pattern_count" class="form-control" /></div>
+                        <button type="button" class="btn_show" onclick="show_pattern()">Show Pattern</button>
+                    </div>
+                    <div id="result10">
 
-            </div>
-            <hr>
-            <h4>4. Write a JavaScript program to find the sum of squares of the elements of an array.
-            </h4>
-            <button type="button" class="btn_result" onclick="show_div(4)">Solution</button>
-            <div class="answer_section show" id="answerhide_4">
-
-            </div>
-            <hr>
-            <h4>5. Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, check if the current number is odd or even, and display the message to the screen as odd or even. </h4>
-            <button type="button" class="btn_result" onclick="show_div(5)">Solution</button>
-            <div class="answer_section show" id="answerhide_5">
-
-            </div>
-            <hr>
-            <h4>6. Write a JavaScript function to truncate a string if it is longer than the specified number of characters.
-            </h4>
-            <button type="button" class="btn_result" onclick="show_div(6)">Solution</button>
-            <div class="answer_section show" id="answerhide_6">
-
-            </div>
-            <hr>
-            <h4>7. Write a JavaScript program that accept two integers and display the larger using findLarge() function.</h4>
-            <button type="button" class="btn_result" onclick="show_div(7)">Solution</button>
-            <div class="answer_section show" id="answerhide_7">
-
-            </div>
-            <hr>
-            <h4>8. Write a JavaScript program using for…in to read the objects from an array entered by an user and to arrange it in alphabetical order.</h4>
-            <button type="button" class="btn_result" onclick="show_div(8)">Solution</button>
-            <div class="answer_section show" id="answerhide_8">
-                <div class="row">
-                    <div class="col-md-2"><label>Enter Value :</label></div>
-                    <div class="col-md-5"> <input type="text" name="array_string" id="array_string" class="form-control" /></div>
-                    <button type="button" class="btn_show" onclick="show_pattern_string()">Show Pattern</button>
-                </div>
-
-                <div id="result8">
+                    </div>
 
                 </div>
-
-            </div>
-
-            <hr>
-            <h4>9. Write a JavaScript program to print the letters of the word “Javascript” as below in each line using for…of.
-                <br> J
-                <br> Ja
-                <br> Jav
-                <br> .
-                <br> .
-                <br> Javascript
-                <br>
-            </h4>
-            <button type="button" class="btn_result" onclick="show_div(9)">Solution</button>
-            <hr>
-            <div class="answer_section show" id="answerhide_9">
-                <div class="row">
-                    <div class="col-md-2"><label>Enter String :</label></div>
-                    <div class="col-md-5"> <input type="text" name="pattern_string_count" id="pattern_string_count" class="form-control" /></div>
-                    <button type="button" class="btn_show" onclick="show_pattern_string()">Show Pattern</button>
-                </div>
-                <div id="result9">
-
-                </div>
-            </div>
-            <h4>10.Write a JavaScript program to construct the following pattern, using a nested for loop.
-                <br> *
-                <br> * *<br> * * *<br> * * * *<br> </h4>
-            <button type="button" class="btn_result" onclick="show_div(10)">Solution</button>
-            <div class="answer_section show" id="answerhide_10">
-                <div class="row">
-                    <div class="col-md-2"><label>Enter Level of the pattern :</label></div>
-                    <div class="col-md-5"> <input type="number" name="pattern_count" id="pattern_count" class="form-control" /></div>
-                    <button type="button" class="btn_show" onclick="show_pattern()">Show Pattern</button>
-                </div>
-                <div id="result10">
-
-                </div>
-
             </div>
             <hr>
 
